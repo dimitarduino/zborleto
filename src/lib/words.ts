@@ -20,9 +20,7 @@ export const isWinningWord = (word: string) => {
 
 export const getWordOfDayIndex = () => {
     
-    if (zborotNaDenotIndex == -1) {
-        const now = Date.now()
-        
+    if (zborotNaDenotIndex === -1) {        
         zborotNaDenotIndex = Math.round(Math.random() * WORDS.length);
 
         return zborotNaDenotIndex;
