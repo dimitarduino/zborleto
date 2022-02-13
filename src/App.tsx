@@ -132,7 +132,7 @@ function App() {
                 setIsGameLost(true)
                 return setTimeout(() => {
                     setIsGameLost(false)
-                    // window.location.reload();
+                    window.location.reload();
                 }, 5000)
             }
         }
