@@ -8,9 +8,9 @@ export const TimeLeft = ({ timeLeft }: Props) => {
     const { hours, minutes, seconds } = timeLeft
     return (
         <div className="my-2 text-center">
-            <h4>До следно ЗБОРЛЕ</h4>
+            <h4>За следно ЗБОРЛЕ</h4>
             <p className="text-3xl">
-                {hours}:{formatTime(minutes)}:{formatTime(seconds)}
+                рефреширај
             </p>
         </div>
     )

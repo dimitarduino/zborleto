@@ -15,6 +15,7 @@ export const getWordOfDay = () => {
 }
 
 export const isWinningWord = (word: string) => {
+    console.log(getWordOfDay());
     return getWordOfDay() === word
 }
 

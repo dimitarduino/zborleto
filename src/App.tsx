@@ -34,7 +34,11 @@ function App() {
             return []
         }
         if (loaded.guesses.includes(getWordOfDay())) {
-            setIsGameWon(true)
+            setIsGameWon(true);
+
+            setTimeout(() => {
+                window.location.reload();
+            }, 1000);
         }
         return loaded.guesses
     })
@@ -116,6 +120,10 @@ function App() {
 
             if (winningWord) {
                 setStats(addStatsForCompletedGame(stats, guesses.length))
+                setTimeout(() => {
+                    window.location.reload();
+                }, 2000);
+
                 return setIsGameWon(true)
             }
 
@@ -124,7 +132,8 @@ function App() {
                 setIsGameLost(true)
                 return setTimeout(() => {
                     setIsGameLost(false)
-                }, 5000)
+                    window.location.reload();
+                }, 3000)
             }
         }
     }
