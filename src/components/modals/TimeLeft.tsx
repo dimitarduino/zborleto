@@ -5,7 +5,7 @@ type Props = {
 }
 
 export const TimeLeft = ({ timeLeft }: Props) => {
-    const { hours, minutes, seconds } = timeLeft
+    // const { hours, minutes, seconds } = timeLeft
     return (
         <div className="my-2 text-center">
             <h4>За следно ЗБОРЛЕ</h4>
