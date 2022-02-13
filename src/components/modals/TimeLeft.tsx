@@ -1,4 +1,5 @@
-import { formatTime, Time } from '../../lib/words'
+// import { formatTime, Time } from '../../lib/words'
+import { Time } from '../../lib/words'
 
 type Props = {
     timeLeft: Time
